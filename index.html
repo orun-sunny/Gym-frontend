@@ -5,92 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunny Fitness</title>
+    <title>Fitness</title>
     <style>
-        /* css reset */
-        body {
-            background-color: seashell;
-            margin: 2%;
-            padding: 2%;
+        .login-cotainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            /* padding: 100%; */
+        }
+
+        /* .login-form input,
+        button {
+            font-size: 1.3em;
+            margin-top: 15px;
+            border: 1px solid lightblue;
+            padding-left: 10px;
+            border-radius: 5px;
+
+        }
+
+        .login-form button {
             background-color: orange;
-            /* background: url(images/charles-gaudreault-xXofYCc3hqc-unsplash.jpg); */
-        }
+            color: whitesmoke;
+            font-weight: 700px;
 
-        .left {
-            display: inline-block;
-            border: 2px solid red;
-            position: relative;
-            left: 34px;
-            top: 0px;
-        }
-
-
-
-        .mid {
-            display: block;
-            position: relative;
-            width: 15%;
-            margin: -79px auto;
-            border: 2px solid rgb(89, 0, 255);
-        }
-
-
-        .right {
-            position: absolute;
-            right: 34px;
-            top: 60px;
-            display: inline-block;
-            border: 2px solid rgb(0, 255, 157);
-        }
-
-        .navbar {
-            display: inline-block;
-        }
-
-        .navbar li {
-            display: inline-block;
-            font-size: 25px;
-        }
-
-        .navbar li a {
-            color: white;
-            text-decoration: none;
-            padding: 34px 23px;
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <header class="header">
-        <!-- left box for logo -->
-        <div class="left">
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h2>login</h2>
+            <input type="email" name="email" placeholder="Your Email" id="" required>
+            <input type="password" name="password" placeholder="password" id="" required>
+            <button type="submit">Log in</button>
+        </form>
 
-
-            i am left
-
-
-
-        </div>
-        <!-- mid box for navbar -->
-        <div class="mid">
-            <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">fitness Calculator</a></li>
-                <li><a href="#">contact us</a> </li>
-            </ul>
-            <!-- i am mid -->
-
-        </div>
-
-        <div class="right">
-            i am right
-
-        </div>
-
-
-
-    </header>
+    </section>
 
 </body>
 
